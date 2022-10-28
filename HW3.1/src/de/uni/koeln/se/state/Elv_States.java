@@ -8,9 +8,6 @@ public class Elv_States {
 
 	public String Moving_down = "Moving_down";
 	
-	public String Exit = "Exit";
-	
-	public String Arrive_to_Floor = "Arrive_to_Floor";
-	
+	public String Idle = "Idle";
 
 }
