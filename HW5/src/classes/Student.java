@@ -7,10 +7,10 @@ public class Student {
 	public String getName() {
 		return name;
 	}
-	
-	public Project getProject() {
-		return Project;
-	}
+	//in case constructors do not count as operations
+	//public Project getProject() {
+	//	return project;
+	//} 
 
 	public Student(int id, String name, Project project) {
 		this.id = id;

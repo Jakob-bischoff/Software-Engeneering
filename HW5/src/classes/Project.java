@@ -14,8 +14,10 @@ public class Project {
 		
 	}
 	
-	public Student getMember() {
-		return Student;
+
+	public Project(String name) {
+		
+		this.name = name;
 	}
 
 }
