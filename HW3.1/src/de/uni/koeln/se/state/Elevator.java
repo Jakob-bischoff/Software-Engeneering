@@ -25,7 +25,7 @@ public class Elevator {
 				System.out.println(String.valueOf(current_Floor));
 			}
 			if (current_Floor == dest_Floor) {
-				State.Current_State = State.Arrive_to_Floor;
+				State.Current_State = State.Idle;
 			}
 		}
 		
@@ -39,13 +39,13 @@ public class Elevator {
 				System.out.println(String.valueOf(current_Floor));
 			}
 			if (current_Floor == dest_Floor) {
-				State.Current_State = State.Arrive_to_Floor;
+				State.Current_State = State.Idle;
 				
 			}
 		}
 		
 		if (current_Floor == dest_Floor) {
-			State.Current_State = State.Exit;
+			State.Current_State = State.Idle;
 			System.out.println(State.Current_State);
 		}
 		
