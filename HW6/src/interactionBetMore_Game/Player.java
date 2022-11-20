@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Player {
 	boolean user_selected;
-	int tries = 1;
+	int tries = 0;
 	Game_Chair chair;
 	BetMore_Game Bet = new BetMore_Game(chair);
 	public int number;
@@ -28,7 +28,7 @@ public class Player {
 			} else {
 				user_selected = false;
 			}
-			while (user_selected = false || tries < 6) {
+			while (user_selected = false || tries < 4) {
 				int newNumber = Bet.pick_card();
 				tries++;
 				String j = Integer.toString(newNumber);
@@ -37,6 +37,10 @@ public class Player {
 				if (answer2.equals("yes")) {
 					user_selected = true;
 					break;
+					
+				}
+				if(tries==4) {
+					newNumber = Bet.pick_card();
 				}
 				number = newNumber;
 			}

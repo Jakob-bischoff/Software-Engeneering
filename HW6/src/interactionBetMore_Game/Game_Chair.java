@@ -23,6 +23,9 @@ public class Game_Chair {
 		 System.out.println();
 		 System.out.println();
 		 System.out.println(bet.calculating(Computer, Player_2));
+		 System.out.println("The number of the Computer was " + ComNum);
+		 System.out.println("Your number was " + PlayerNum);
+		 }
 		
 	}
-}
+
