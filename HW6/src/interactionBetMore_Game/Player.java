@@ -28,7 +28,7 @@ public class Player {
 			} else {
 				user_selected = false;
 			}
-			while (user_selected = false || tries < 4) {
+			while (user_selected == false && tries < 4) {
 				int newNumber = Bet.pick_card();
 				tries++;
 				String j = Integer.toString(newNumber);
@@ -36,7 +36,7 @@ public class Player {
 				String answer2 = stringScanner.next();
 				if (answer2.equals("yes")) {
 					user_selected = true;
-					break;
+				
 					
 				}
 				if(tries==4) {
